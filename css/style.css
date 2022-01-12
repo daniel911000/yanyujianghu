@@ -1,0 +1,221 @@
+/* body */
+body {
+    background-color: #fff9de;
+    margin: 0;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* �萸�扎���踴�扎���� */
+h1 {
+    font-size: 1em;
+    color: #6b3008;
+    text-align: center;
+}
+
+/* 閬见枂�� */
+h2 {
+    text-align: center;
+}
+
+h3 {
+    border-left: solid 6px #ff3008;
+    padding-left: 6px;
+}
+
+
+
+
+
+/* �𠾼�潦�詻�桀����� */
+.pagetop {
+    text-align: right;
+}
+
+/* �喋�𢛵�潦�押�扎�� */
+.copyright {
+    border-top: solid 3px #000000;
+    text-align: center;
+}
+
+/* article */
+article {
+    padding: 32px 16px;
+}
+
+/* �𨰜�准�𨰻���潦�怒�航�峕艶�𠧧�餅���𡑒𠧧�鍦�㗇凒 */
+#profile {
+    background-color: #6b3008;
+    color: #ffffff;
+}
+
+/* �喋�喋���喋��撟��桐�𢠃�僐�坿身摰� */
+#profile .inner {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#concert {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* section */
+section {
+    margin: 48px 0;
+}
+
+/* �枂瞍磰���峴ection */
+.performer {
+    margin: 0 0 24px;
+    overflow: hidden;
+}
+.performer img {
+    float: left;
+    margin: 0 16px 0 0;
+}
+.performer h4 {
+    margin: 0 0 0.5em;
+}
+.performer p {
+    margin: 0;
+}
+
+/* 銵� */
+table {
+    margin-left:auto ;
+    margin-right: auto ;
+    border-collapse: collapse;
+    width: 100%;
+}
+th,td {
+    border: solid 1px #999999;
+    padding: 16px;
+}
+th {
+    background-color: #999999;
+}
+td {
+    text-align: center
+    white-space: nowrap;
+    background-color: #ffffff;
+}
+
+
+/* �芥�嫘�� */
+ol li {
+    list-style-type: upper-roman;
+}
+
+/* �𨳍�瓐�脯�潦�瑯�扼�� */
+.navigation ul {
+    background-color: #000000;
+    margin: 0;
+    padding: 4px;
+    text-align: center;
+}
+.navigation ul li {
+    list-style-type: none;
+    display: inline;
+    margin: 0 8px;
+}
+.navigation ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.navigation ul li a:hover {
+    color: #62d5e8;
+    text-decoration: underline;
+}
+
+/* �～�扎�喋�瓐�詻�乓�Ｕ�� */
+.mainvisual {
+    background-color: #62d5e8;
+    border-bottom: solid 3px #000000;
+}
+.mainvisual img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+.slider_container {
+margin: 30px auto;
+width: 740px;
+height: 340px;
+position: relative;
+border: 20px solid;
+border-color: #fff;
+border-bottom-width: 100px;
+background-color: #f5f5f5;
+box-shadow: #666 0 0 5px;
+}
+
+.slider_container div {
+position: absolute;
+top: 0;
+left: 0;
+opacity: 0;
+filter: alpha(opacity=0);
+}
+.slider_container div {
+-webkit-animation: round 10s linear infinite;
+animation: round 40s linear infinite;
+}
+
+@-webkit-keyframes round {
+4% {
+opacity: 1;
+filter: alpha(opacity=100);
+/* 0 - 1秒 淡入*/
+}
+80% {
+opacity: 1;
+filter: alpha(opacity=100);
+/* 1- 5秒靜止*/
+}
+4% {
+opacity: 0;
+filter: alpha(opacity=0);
+/* 5-6秒淡出*/
+}
+}
+@keyframes round {
+4% {
+opacity: 1;
+filter: alpha(opacity=100);
+/* 0 - 1秒 淡入*/
+}
+80% {
+opacity: 1;
+filter: alpha(opacity=100);
+/* 1- 5秒靜止*/
+}
+4% {
+opacity: 0;
+filter: alpha(opacity=0);
+/* 5-6秒淡出*/
+}
+.slider_container div:nth-child(5) {
+-webkit-animation-delay: 0s;
+animation-delay: 0s;
+}
+
+.slider_container div:nth-child(4) {
+-webkit-animation-delay: 10s;
+animation-delay: 10s;
+}
+
+.slider_container div:nth-child(3) {
+-webkit-animation-delay: 10s;
+animation-delay: 10s;
+}
+
+.slider_container div:nth-child(2) {
+-webkit-animation-delay: 15s;
+animation-delay: 15s;
+}
+
+.slider_container div:nth-child(1) {
+-webkit-animation-delay: 20s;
+animation-delay: 20s;
+}
